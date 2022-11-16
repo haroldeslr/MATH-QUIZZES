@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="30dp"
+    tools:context=".HomeScreenActivity">
+
+    <ImageView
+        android:id="@+id/image_view_math_quiz_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/math_quiz_logo"
+        app:layout_constraintBottom_toTopOf="@+id/home_screen_guideline11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/home_screen_guideline7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_start_quiz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_start_quiz"
+        android:padding="13dp"
+        android:text="Start Quiz"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeMaxTextSize="14dp"
+        android:textAllCaps="false"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/home_screen_guidelineH68"
+        app:layout_constraintEnd_toStartOf="@+id/home_screen_guidelineV73"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home_screen_guidelineV27"
+        app:layout_constraintTop_toTopOf="@+id/home_screen_guidelineH55"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_high_score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_high_score"
+        android:text="High Score"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeMaxTextSize="14dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:padding="13dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/home_screen_guidelineH81"
+        app:layout_constraintEnd_toStartOf="@+id/home_screen_guidelineV73"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home_screen_guidelineV27"
+        app:layout_constraintTop_toTopOf="@+id/home_screen_guidelineH68"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_setts"
+        android:background="@drawable/button_settings"
+        android:text="Settings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:padding="13dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@id/home_screen_guidelineV27"
+        app:layout_constraintTop_toBottomOf="@id/home_screen_guideline88"
+        app:layout_constraintEnd_toStartOf="@id/home_screen_guidelineV73"
+        app:layout_constraintBottom_toTopOf="@id/home_screen_guideline98"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_screen_guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_screen_guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_screen_guidelineH55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_screen_guidelineH68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_screen_guidelineH81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.81" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_screen_guidelineV27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_screen_guidelineV73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_screen_guideline88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/home_screen_guideline98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e7eb"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/text_view_header_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/text_view_header"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_score_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/score_icon"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_guideline1"
+        app:layout_constraintStart_toStartOf="@+id/text_view_question_box"
+        app:layout_constraintTop_toTopOf="@+id/text_view_header_background" />
+
+    <TextView
+        android:id="@+id/text_view_current_score"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:freezesText="true"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="140"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_score_icon"
+        app:layout_constraintStart_toEndOf="@+id/image_view_score_icon"
+        app:layout_constraintTop_toTopOf="@id/image_view_score_icon" />
+
+    <ImageView
+        android:id="@+id/image_view_question_count_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="20dp"
+        android:paddingTop="2.5dp"
+        android:src="@drawable/question_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_score_icon"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_question_count"
+        app:layout_constraintTop_toTopOf="@+id/image_view_score_icon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_view_question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:freezesText="true"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="50/50"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_current_score"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_question_box"
+        app:layout_constraintTop_toTopOf="@+id/text_view_current_score" />
+
+    <TextView
+        android:id="@+id/text_view_question_box"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/text_view_question_box"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_guideline1" />
+
+    <TextView
+        android:id="@+id/text_view_difficulty"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/text_view_difficulty"
+        android:freezesText="true"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="10dp"
+        android:text="Medium Mode"
+
+        android:textColor="@color/light_green_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_question"
+        app:layout_constraintEnd_toStartOf="@id/quiz_guideline6"
+        app:layout_constraintStart_toStartOf="@+id/text_view_question"
+        app:layout_constraintTop_toTopOf="@+id/text_view_question_box" />
+
+    <ImageView
+        android:id="@+id/image_view_score_amount_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="20dp"
+        android:src="@drawable/score_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_difficulty"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_score_amount"
+        app:layout_constraintTop_toTopOf="@+id/text_view_difficulty" />
+
+    <TextView
+        android:id="@+id/text_view_score_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:freezesText="true"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="5"
+        android:textColor="@color/light_green_color"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_score_amount_icon"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_question"
+        app:layout_constraintTop_toTopOf="@+id/image_view_score_amount_icon" />
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:freezesText="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="160 X 20"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeMaxTextSize="14dp"
+        android:textAlignment="center"
+        android:textColor="@color/default_option_button_text_color"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_question_box"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_question_box"
+        app:layout_constraintStart_toStartOf="@+id/text_view_question_box"
+        app:layout_constraintTop_toTopOf="@id/text_view_question_box" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_option1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/text_view_question_box"
+        android:freezesText="true"
+        android:padding="20dp"
+        android:text="Option 1"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeMaxTextSize="14dp"
+        android:textAllCaps="false"
+        android:textColor="@color/default_option_button_text_color"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_guideline4"
+        app:layout_constraintEnd_toStartOf="@id/quiz_guideline6"
+        app:layout_constraintStart_toStartOf="@+id/text_view_question_box"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_guideline3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_option2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/text_view_question_box"
+        android:freezesText="true"
+        android:padding="20dp"
+        android:text="Option 2"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeMaxTextSize="14dp"
+        android:textAllCaps="false"
+        android:textColor="@color/default_option_button_text_color"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_guideline4"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_question_box"
+        app:layout_constraintStart_toEndOf="@id/quiz_guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_guideline3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_option3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/text_view_question_box"
+        android:freezesText="true"
+        android:padding="20dp"
+        android:text="Option 3"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeMaxTextSize="14dp"
+        android:textAllCaps="false"
+        android:textColor="@color/default_option_button_text_color"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_guideline5"
+        app:layout_constraintEnd_toStartOf="@id/quiz_guideline6"
+        app:layout_constraintStart_toStartOf="@+id/button_option1"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_guideline4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_option4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/text_view_question_box"
+        android:freezesText="true"
+        android:padding="20dp"
+        android:text="Option 4"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeMaxTextSize="14dp"
+        android:textAllCaps="false"
+        android:textColor="@color/default_option_button_text_color"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/quiz_guideline5"
+        app:layout_constraintEnd_toEndOf="@+id/button_option2"
+        app:layout_constraintStart_toEndOf="@id/quiz_guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_guideline4"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_confirm_answer_next_question"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_confirm_next"
+        android:freezesText="true"
+        android:padding="10dp"
+        android:text="Confirm Answer"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeMaxTextSize="14dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_option4"
+        app:layout_constraintStart_toStartOf="@+id/button_option3"
+        app:layout_constraintTop_toBottomOf="@id/quiz_guideline5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/quiz_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/quiz_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/quiz_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.58" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/quiz_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/quiz_guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/quiz_guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

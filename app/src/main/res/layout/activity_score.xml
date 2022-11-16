@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7145fe"
+    android:padding="25dp"
+    tools:context=".ScoreActivity">
+
+    <TextView
+        android:id="@+id/text_view_box"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/text_view_score_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/score_icon"
+        app:layout_constraintBottom_toTopOf="@+id/score_guideline1"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_box"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/text_view_box"
+        app:layout_constraintTop_toTopOf="@+id/text_view_box" />
+
+    <TextView
+        android:id="@+id/text_view_all_clear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:text="ALL CLEAR!"
+        android:textAlignment="center"
+        android:textColor="#fa636a"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/score_guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_box"
+        app:layout_constraintStart_toStartOf="@+id/text_view_box"
+        app:layout_constraintTop_toBottomOf="@id/score_guideline1" />
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/text_view_score_background"
+        android:padding="18dp"
+        android:text="300"
+        android:textAlignment="center"
+        android:textColor="#55476a"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/score_guideline3"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_view_box"
+        app:layout_constraintTop_toTopOf="@+id/score_guideline2" />
+
+    <TextView
+        android:id="@+id/text_view_awesome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/text_view_question_box"
+        android:padding="8dp"
+        android:text="AWESOME!"
+        android:textAlignment="center"
+        android:textColor="#ff5e62"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_score"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_score"
+        app:layout_constraintStart_toStartOf="@+id/text_view_score"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_score" />
+
+    <ImageButton
+        android:id="@+id/image_button_menu_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginEnd="141dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/menu_icon"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_box"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_box"
+        app:layout_constraintStart_toStartOf="@+id/text_view_box"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_box" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/score_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/score_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/score_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
